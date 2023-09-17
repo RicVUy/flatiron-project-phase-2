@@ -1,0 +1,121 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ricardo",
+      "image": "https://thewebdev.info/wp-content/uploads/2020/07/yyxtdktkrfm-1200x800.jpg",
+      "password": "dolphin",
+      "position": "Cleaner",
+      "schedule": "Thursday, Friday, Saturday, Sunday",
+      "workTime": "7:00 AM to 6:00 PM",
+      "payPerHour": 40,
+      "timeInEvents": "7:00",
+      "timeOutEvents": "9:00",
+      "payForThisWeek": "130"
+    },
+    {
+      "id": 2,
+      "name": "Edna",
+      "image": "https://thewebdev.info/wp-content/uploads/2020/07/6v2rgdqbq1i-1200x800.jpg",
+      "password": "Eloise",
+      "position": "Asst. Manager",
+      "schedule": "Wednesday,Thursday, Friday, Saturday",
+      "workTime": "7:00 AM to 6:00 PM",
+      "payPerHour": 35,
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": 0
+    },
+    {
+      "id": 3,
+      "name": "Johnny",
+      "image": "https://thewebdev.info/wp-content/uploads/2020/07/d0injibzoww-1200x800.jpg",
+      "password": "Kuro",
+      "position": "Maintenance",
+      "schedule": "Tuesday,Wednesday,Thursday, Friday",
+      "workTime": "7:00 AM to 6:00 PM",
+      "payPerHour": 33,
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": 0
+    },
+    {
+      "name": "JayR Cabanban",
+      "image": "https://cdn.wallpapersafari.com/67/72/HxoFaP.jpg",
+      "password": "mabuhay",
+      "position": "Purchaser",
+      "schedule": "Monday to Saturday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "14",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "345",
+      "id": 4
+    },
+    {
+      "name": "Paul Jethro Uy",
+      "image": "\"http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png\"",
+      "password": "adobo",
+      "position": "Accountant",
+      "schedule": "Monday to Wednesday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "35",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "450",
+      "id": 5
+    },
+    {
+      "name": "James Uy",
+      "image": "\"http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png\"",
+      "password": "fghjkl;",
+      "position": "Purchaser",
+      "schedule": "Monday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "35",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "120",
+      "id": 6
+    },
+    {
+      "name": "Woody",
+      "image": "\"./assets/ramen/nirvana.jpg\"",
+      "password": "wertyui",
+      "position": "sales",
+      "schedule": "Monday to Saturday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "18",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "789",
+      "id": 7
+    },
+    {
+      "name": "Ruby Diego",
+      "image": "\"https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist\"",
+      "password": "ariba",
+      "position": "sales",
+      "schedule": "Monday to Saturday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "14",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "567",
+      "id": 8
+    },
+    {
+      "name": "Merei Bertiz",
+      "image": "https://cdn.wallpapersafari.com/67/72/HxoFaP.jpg",
+      "password": "welcome",
+      "position": "sales",
+      "schedule": "Monday to Saturday",
+      "workTime": 89,
+      "payPerHour": 23,
+      "timeInEvents": "3:00 AM",
+      "timeOutEvents": "9:00",
+      "payForThisWeek": "0",
+      "id": 9
+    }
+  ]
+}
