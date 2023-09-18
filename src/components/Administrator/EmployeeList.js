@@ -1,9 +1,9 @@
 import React from 'react'
 import EmployeeCard from './EmployeeCard'
 
-function EmployeeList({employees, onUpdateEmployee}) {
+function EmployeeList({employees, onUpdateEmployee, onDeleteEmployee}) {
 
-    const employeeList = employees.map((employee) => <EmployeeCard key={employee.id} employee={employee} onUpdateEmployee={onUpdateEmployee}/>)
+    const employeeList = employees.map((employee) => <EmployeeCard key={employee.id} employee={employee} onUpdateEmployee={onUpdateEmployee} onDeleteEmployee={onDeleteEmployee}/>)
   return (
     <ul className="cards">{employeeList}</ul>
   )

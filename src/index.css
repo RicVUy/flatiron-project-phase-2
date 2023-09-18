@@ -25,6 +25,16 @@ body, css {
   padding: 0.5rem;
   background-color: cornflowerblue;
 }
+.card1 {
+  margin: 1rem;
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: cornflowerblue;
+}
 .card img {
   width: 50%;
 }

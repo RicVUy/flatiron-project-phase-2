@@ -43,9 +43,22 @@ function NewEmployeeForm({onAddEmployee}) {
       fetch("http://localhost:3001/employees", configObj)
       .then(r => r.json())
       .then(employee => onAddEmployee(employee))
+
+      setFormData({
+        name: "",
+    image: "",
+    password: "",
+    position: "",
+    schedule: "",
+    workTime: 0,
+    payPerHour: 0,
+    timeInEvents : [],
+    timeOutEvents : [],
+    payForThisWeek: 0,
+      })
     }
   return (
-    <div className="card">
+    <div className="card1">
       <h2>New Employee</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>

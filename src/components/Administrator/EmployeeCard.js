@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function EmployeeCard ({employee, onUpdateEmployee}) {
+function EmployeeCard ({employee, onUpdateEmployee, onDeleteEmployee}) {
     const {
     id,    
     name,
@@ -15,6 +15,7 @@ function EmployeeCard ({employee, onUpdateEmployee}) {
     payForThisWeek} = employee
 
     const [updatedWorkTime, setUpdatedWorkTime] = useState(0)
+    
     function handleWorkTimeChange(e){
         const amount = e.target.value
         if (amount === "" || amount === null) {
@@ -39,6 +40,13 @@ function EmployeeCard ({employee, onUpdateEmployee}) {
     
         setUpdatedWorkTime(0)
       }
+      function handleDelete(params) {
+        fetch(`http://localhost:3001/employees/${id}`, {
+          method: "DELETE"
+        })
+        .then(onDeleteEmployee(id))
+       }
+
     return (
         <div className="card">
            <ul>
@@ -53,6 +61,7 @@ function EmployeeCard ({employee, onUpdateEmployee}) {
            <li>Time Out:{timeOutEvents}</li>
            <li>Pay for this week: ${payForThisWeek}</li>
            </ul>
+           <button onClick={handleDelete}>Delete</button>
            <form onSubmit={handleSubmit}>
         <input 
         type="number" 

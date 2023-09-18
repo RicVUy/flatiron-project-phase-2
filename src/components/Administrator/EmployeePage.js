@@ -28,18 +28,29 @@ const EmployeePage = () => {
               setEmployees(updatedEmployees)
               }
 
+              function handleDeleteEmployee(id) {
+                const filteredEmployees = employees.filter(employee => employee.id !== id)
+                setEmployees(filteredEmployees)
+              }
+
   const filteredEmployees = employees.filter(employee => employee.name.toLowerCase().includes(searchTerm.toLowerCase()))          
   
   return (
     <main>
+      <div id='employeeForm'>
+      <SearchEmployee searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      </div>
       <div>
-        <EmployeeList employees={filteredEmployees} onUpdateEmployee={handleUpdatedEmployee}/>
+        <EmployeeList 
+        employees={filteredEmployees} 
+        onUpdateEmployee={handleUpdatedEmployee}
+        onDeleteEmployee={handleDeleteEmployee}
+        />
         </div>
         <div id="employeeForm">
-        <SearchEmployee searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+       
         <NewEmployeeForm onAddEmployee={handleAddEmployee}/>
-         
-        </div>
+         </div>
         </main>
   )
 }
