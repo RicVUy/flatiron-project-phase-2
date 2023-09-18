@@ -17,12 +17,23 @@ const EmployeePage = () => {
             setEmployees([...employees, newEmployee])
             }  
 
+            function handleUpdatedEmployee(updatedEmployee){
+              const updatedEmployees = employees.map((employee) => {
+                if (employee.id === updatedEmployee.id) {
+                  return updatedEmployee
+                 } else {
+                  return employee
+                 }
+              })
+              setEmployees(updatedEmployees)
+              }
+
   const filteredEmployees = employees.filter(employee => employee.name.toLowerCase().includes(searchTerm.toLowerCase()))          
   
   return (
     <main>
       <div>
-        <EmployeeList employees={filteredEmployees}/>
+        <EmployeeList employees={filteredEmployees} onUpdateEmployee={handleUpdatedEmployee}/>
         </div>
         <div id="employeeForm">
         <SearchEmployee searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
