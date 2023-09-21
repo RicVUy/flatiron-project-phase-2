@@ -27,7 +27,7 @@ body, css {
 }
 .card1 {
   margin: 1rem;
-  width:50%;
+  width:30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,4 +54,34 @@ box-shadow: 2px 5px 5px #333;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+.editFormSection {
+  text-align:center;
+  border: 5px solid purple;
+  
+  width: 50%
+}
+#time-in-out {
+  position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+border: 1px solid #333;
+background: rgba(255, 0, 0, 0.3);
+padding: 15px 20px 18px 18px;
+border-radius: 5px;
+box-shadow: 2px 5px 5px #333;
+}
+#time-elapsed-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid #333;
+  background: rgba(153, 0, 255, 0.3);
+  padding: 15px 20px 18px 18px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #333;
 }

@@ -79,6 +79,7 @@ function NewEmployeeForm({onAddEmployee}) {
         <input type="text" name="timeInEvents" value={formData.timeInEvents} placeholder="timeInEvents" onChange={handleChange}/>
         <label htmlFor="timeOutEvents">Time Out Events</label>
         <input type="text" name="timeOutEvents" value={formData.timeOutEvents} placeholder="timeOutEvents" onChange={handleChange}/>
+        <label htmlFor="payForThisWeek">Pay for this Week</label>
         <input type="number" name="payForThisWeek" step="0.01" value={formData.payForThisWeek} placeholder="payForThisWeek" onChange={handleChange}/>
         <button type="submit">Add Employee</button>
       </form>

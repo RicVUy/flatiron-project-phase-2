@@ -77,6 +77,19 @@
       "timeOutEvents": "9:00",
       "payForThisWeek": "0",
       "id": 9
+    },
+    {
+      "name": "JayR Cabanban",
+      "image": "",
+      "password": "",
+      "position": "",
+      "schedule": "",
+      "workTime": 0,
+      "payPerHour": 0,
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": 0,
+      "id": 10
     }
   ]
 }

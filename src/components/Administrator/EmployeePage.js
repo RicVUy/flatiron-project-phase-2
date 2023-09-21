@@ -2,10 +2,12 @@ import React, {useState, useEffect} from 'react'
 import EmployeeList from './EmployeeList'
 import NewEmployeeForm from './NewEmployeeForm'
 import SearchEmployee from './SearchEmployee'
+//import EditFormSection from './EditFormSection'
 
 const EmployeePage = () => {
     const [employees, setEmployees] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
+    //const [employee, setEmployee] = useState({})
 
     useEffect(() => {
         fetch("http://localhost:3001/employees")
@@ -35,6 +37,10 @@ const EmployeePage = () => {
 
   const filteredEmployees = employees.filter(employee => employee.name.toLowerCase().includes(searchTerm.toLowerCase()))          
   
+  /*const onUpdateEmployee = (updatedEmployee) => {
+    setEmployee(updatedEmployee)
+  }*/
+
   return (
     <main>
       <div id='employeeForm'>
@@ -48,9 +54,11 @@ const EmployeePage = () => {
         />
         </div>
         <div id="employeeForm">
-       
-        <NewEmployeeForm onAddEmployee={handleAddEmployee}/>
-         </div>
+       <NewEmployeeForm onAddEmployee={handleAddEmployee}/>
+       </div>
+        {/*<div className="editFormSection">
+     <EditFormSection handleUpdateEmployee={onUpdateEmployee}/>
+  </div> */}
         </main>
   )
 }
