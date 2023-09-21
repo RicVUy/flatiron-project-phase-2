@@ -3,9 +3,12 @@ import React, { useState, useEffect } from 'react';
 function TimeElapsed() {
   const [startTime, setStartTime] = useState(null);
   const [endTime, setEndTime] = useState(null);
+  const [totalTime, setTotalTime] = useState(0);
   const [elapsedTime, setElapsedTime] = useState(0);
- let timeWork = []
- let duration = 0;
+ let existingData = []
+ let totalTimeMin =0
+ let duration = 0
+let totalTimeHour=0
   const handleStartClick = () => {
     setStartTime(Date.now());
   };
@@ -13,14 +16,16 @@ function TimeElapsed() {
   const handleStopClick = () => {
     if (startTime) {
       setEndTime(Date.now());
-
+      setTotalTime(totalTime + (Date.now() - startTime));
+       
     }
   };
 
   useEffect(() => {
     if (endTime) {
        duration = endTime - startTime;
-      setElapsedTime(duration);
+        let durationMin = (duration/60000).toFixed(2)
+      setElapsedTime(durationMin);
      
     }
   }, [startTime, endTime]);
@@ -34,7 +39,7 @@ function TimeElapsed() {
       };
 
       // Fetch existing timer data from JSON database
-      const existingData = JSON.parse(localStorage.getItem('timerData')) || [];
+       existingData = JSON.parse(localStorage.getItem('timerData')) || [];
 
       // Add the new record to the array
       existingData.push(newRecord);
@@ -48,21 +53,30 @@ function TimeElapsed() {
       setElapsedTime(0);
     }
   };
+ 
+  totalTimeMin = (totalTime/60000).toFixed(2)
+  totalTimeHour = (totalTimeMin/60).toFixed(2)
 
+  
   return (
     <div>
       <h2>Time At Work</h2>
+      <h4>Total Time(minutes): {totalTimeMin}</h4>
+      <h4>Total Time(hour): {totalTimeHour}</h4>
       <button onClick={handleStartClick}>Time In</button>
-      <button onClick={ () => { handleStopClick(); handleSaveClick();}}>
+      {/*<button onClick={ () => { handleStopClick(); handleSaveClick();}}>
        Time Out 
-      </button>
-      {/*<button onClick={handleStopClick}>Time Out</button>
-      <button onClick={handleSaveClick}>Save</button>*/}
-      <div>
+  </button>*/}
+      
+
+      
+      <button onClick={handleStopClick}>Time Out</button>
+      <button onClick={handleSaveClick}>Save</button>
+<div>
         {startTime && <p>Time In: {new Date(startTime).toLocaleString()}</p>}
         {endTime && <p>Time Out: {new Date(endTime).toLocaleString()}</p>}
-        {elapsedTime > 0 && <p>Time at Work: {elapsedTime} ms</p>}
-        <p>Time at Work:{timeWork}</p>
+        {elapsedTime > 0 && <p>Time at Work: {elapsedTime} minutes</p>}
+    
       </div>
     </div>
   );

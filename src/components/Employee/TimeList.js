@@ -9,25 +9,25 @@ function TimeList() {
     setTimerData(data);
   }, []);
 
-  /*const clearLocalStorage = () => {
+  const clearLocalStorage = () => {
     
     localStorage.clear();
     setTimerData([]);
     
     
-  };*/
+  };
   return (
     <div>
      
       <ul>
         {timerData.map((record, index) => (
           <li key={index}>
-            <p>Start Time: {record.startTime}</p>
-            <p>End Time: {record.endTime}</p>
-            <p>Elapsed Time: {record.elapsedTime} ms</p>
+            <p>Time In: {record.startTime}</p>
+            <p>Time Out: {record.endTime}</p>
+            <p>Time at Work: {record.elapsedTime} minutes</p>
           </li>
         ))}
-        {/*<button onClick={clearLocalStorage}>Delete Time Card</button>*/}
+        <button onClick={clearLocalStorage}>Delete Time Card</button>
       </ul>
     </div>
   );

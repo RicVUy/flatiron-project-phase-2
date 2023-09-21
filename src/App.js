@@ -5,9 +5,13 @@ import TimeIn from './components/Employee/TimeIn';
 import TimeOut from './components/Employee/TimeOut';
 import TimeElapsed from './components/Employee/TimeElapsed';
 import TimeList from './components/Employee/TimeList';
+import Header from './components/Header/Header';
 function App() {
   return (
     <span>
+      <div id="header">
+      <Header/> 
+      </div>
       <div id="time-in-out">
       <TimeIn />
       <TimeOut />
