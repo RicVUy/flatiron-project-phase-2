@@ -64,11 +64,6 @@ let totalTimeHour=0
       <h4>Total Time(minutes): {totalTimeMin}</h4>
       <h4>Total Time(hour): {totalTimeHour}</h4>
       <button onClick={handleStartClick}>Time In</button>
-      {/*<button onClick={ () => { handleStopClick(); handleSaveClick();}}>
-       Time Out 
-  </button>*/}
-      
-
       
       <button onClick={handleStopClick}>Time Out</button>
       <button onClick={handleSaveClick}>Save</button>

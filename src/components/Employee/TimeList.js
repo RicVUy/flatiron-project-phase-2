@@ -10,12 +10,9 @@ function TimeList() {
   }, []);
 
   const clearLocalStorage = () => {
-    
     localStorage.clear();
     setTimerData([]);
-    
-    
-  };
+    };
   return (
     <div>
      

@@ -3,6 +3,7 @@ import EmployeeList from './EmployeeList'
 import NewEmployeeForm from './NewEmployeeForm'
 import SearchEmployee from './SearchEmployee'
 //import EditFormSection from './EditFormSection'
+import EmployeeEdit from './EmployeeEdit'
 
 const EmployeePage = () => {
     const [employees, setEmployees] = useState([])
@@ -55,6 +56,9 @@ const EmployeePage = () => {
         </div>
         <div id="employeeForm">
        <NewEmployeeForm onAddEmployee={handleAddEmployee}/>
+       </div>
+       <div className="edit-employee-form-section">
+        <EmployeeEdit/>
        </div>
         {/*<div className="editFormSection">
      <EditFormSection handleUpdateEmployee={onUpdateEmployee}/>

@@ -6,6 +6,7 @@ import TimeOut from './components/Employee/TimeOut';
 import TimeElapsed from './components/Employee/TimeElapsed';
 import TimeList from './components/Employee/TimeList';
 import Header from './components/Header/Header';
+import EmployeeLogin from './components/Employee/EmployeeLogin';
 function App() {
   return (
     <span>
@@ -19,6 +20,9 @@ function App() {
     <div id="time-elapsed-list">
       <TimeElapsed />
       <TimeList />
+    </div>
+    <div className="edit-employee-form-section">
+      <EmployeeLogin/>
     </div>
     <div className="App">
       <EmployeePage />
