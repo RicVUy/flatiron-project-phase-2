@@ -4,6 +4,7 @@ function TimeElapsed() {
   const [startTime, setStartTime] = useState(null);
   const [endTime, setEndTime] = useState(null);
   const [totalTime, setTotalTime] = useState(0);
+  const [payForThisWeek, setPayForThisWeek] = useState(0);
   const [elapsedTime, setElapsedTime] = useState(0);
  let existingData = []
  let totalTimeMin =0
@@ -17,7 +18,9 @@ let totalTimeHour=0
     if (startTime) {
       setEndTime(Date.now());
       setTotalTime(totalTime + (Date.now() - startTime));
-       
+       console.log(setTotalTime)
+       console.log(totalTime/60000)
+       setPayForThisWeek(((totalTime/60000)*14).toFixed(2))
     }
   };
 
@@ -63,6 +66,7 @@ let totalTimeHour=0
       <h2>Time At Work</h2>
       <h4>Total Time(minutes): {totalTimeMin}</h4>
       <h4>Total Time(hour): {totalTimeHour}</h4>
+      <h4>Pay for this Week: ${payForThisWeek}</h4>
       <button onClick={handleStartClick}>Time In</button>
       
       <button onClick={handleStopClick}>Time Out</button>

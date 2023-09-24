@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+App Building PLan:
+
+1. Home Page:
+   has Employee log in
+   has Admin log in
+ A. if and after employee log in:
+      it will open to : 1. the Time Card
+                 where:  - an employee can time in and time out
+                         -show his time in and time out info
+                         -show total amount of time at work
+                         -show the total amount of pay to be received for that week
+                   or      2. the employee's profile page
+
+  B. if and after admin log in:
+      it may open to any of the page for:
+       1. showing all employee profile( where the admin can delete an employee) 
+       2. Searching an employee to show his profile or information 
+        3.Adding a new employee and his profile
+       4. Updating the profile of employee
+
