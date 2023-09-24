@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+
+
+
 function EmployeeLogin() {
   const [formData, setFormData] = useState({
     name: '',
@@ -9,37 +12,9 @@ function EmployeeLogin() {
   const [employeeData, setEmployeeData] = useState(null);
   const [loginError, setLoginError] = useState('');
   
-  let employees1 = [
-    { 
-          id : 1,
-          name : "Ricardo Uy",
-          password: "dolphin",
-          title : "Manager",
-          payPerHour : 30,
-          timeInEvents : [],
-          timeOutEvents : []
-    },
-    {
-          id : 2,
-          name : "Edna Uy",
-          password: "Eloise",
-          title : "Manager",
-          payPerHour : 25,
-          timeInEvents : [],
-          timeOutEvents : []
-    },
-    {
-      id : 3,
-          name : "Johnny Diego",
-          password: "Kuro",
-          title : "Maintenance",
-          payPerHour : 20,
-          timeInEvents : [],
-          timeOutEvents : []
-    }
-  ]
-
-  
+ 
+  //console.log(employees1[1].name)
+    //  console.log(employees1[1].password)
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -48,26 +23,49 @@ function EmployeeLogin() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    // Simulate employee authentication (replace with your actual authentication logic)
+
+
+    //  employee authentication 
     const { name, password } = formData;
-     console.log(name)
-     console.log(password)
-    // Example authentication logic - you should replace this with your actual authentication logic
     
     
-    if (name === name && password === password) {
+     let employees1 = [
+      { 
+            id : 1,
+            name1 : "Ricardo",
+            password1: "dolphin",
+            
+      },
+      {
+            id : 2,
+            name1 : "Edna",
+            password1: "Eloise",
+           
+      },
+      {
+        id : 3,
+            name1 : "Johnny",
+            password1: "Kuro",
+            
+      }
+    ]
+    
+     for (let i=0; i<3; i++){
+    if (name === employees1[i].name1 && password === employees1[i].password1) {
       // If authentication is successful, fetch employee data
-      fetchEmployeeData(name);
+     fetchEmployeeData(name);
       setLoginError('');
     } else {
       setEmployeeData(null);
       setLoginError('Invalid name or password');
     }
-  };
-
+   
+  }};
+  
+  
   const fetchEmployeeData = (name) => {
     // Fetch employee data based on the provided name
-    // Replace this URL with your actual API endpoint
+    
     fetch(`http://localhost:3001/employees?name=${name}`)
       .then((resp) => resp.json())
       .then((data) => {

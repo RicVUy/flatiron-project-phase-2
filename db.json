@@ -33,11 +33,12 @@
       "password": "Kuro",
       "position": "Maintenance",
       "schedule": "Tuesday,Wednesday,Thursday, Friday",
-      "workTime": 0,
+      "workTime": "190",
       "payPerHour": 33,
-      "timeInEvents": [],
-      "timeOutEvents": [],
-      "payForThisWeek": 0
+      "timeInEvents": "2:00 AM",
+      "timeOutEvents": "8:49 PM",
+      "payForThisWeek": "540",
+      "userName": "jonboy"
     },
     {
       "name": "JayR Cabanban",
