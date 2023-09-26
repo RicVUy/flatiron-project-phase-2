@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-
-
-
 function EmployeeLogin() {
   const [formData, setFormData] = useState({
     name: '',
@@ -12,9 +9,6 @@ function EmployeeLogin() {
   const [employeeData, setEmployeeData] = useState(null);
   const [loginError, setLoginError] = useState('');
   
- 
-  //console.log(employees1[1].name)
-    //  console.log(employees1[1].password)
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -115,7 +109,12 @@ function EmployeeLogin() {
           <h2>Employee Data</h2>
           <p>Name: {employeeData.name}</p>
           <p>Position: {employeeData.position}</p>
-         
+          <p>schedule:{employeeData.schedule}</p>
+          <p>WorkTime:{employeeData.workTime}</p>
+          <p>Pay per hour:${employeeData.payPerHour}</p>
+          <p>Time In:{employeeData.timeInEvents}</p>
+          <p>Time Out:{employeeData.timeOutEvents}</p>
+          <p>Pay for this week: ${employeeData.payForThisWeek}</p>
         </div>
       )}
     </div>

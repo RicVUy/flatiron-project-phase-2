@@ -18,9 +18,8 @@ let totalTimeHour=0
     if (startTime) {
       setEndTime(Date.now());
       setTotalTime(totalTime + (Date.now() - startTime));
-       console.log(setTotalTime)
-       console.log(totalTime/60000)
-       setPayForThisWeek(((totalTime/60000)*14).toFixed(2))
+       //setPayForThisWeek(((totalTime/60000)*14).toFixed(2))
+       console.log(payForThisWeek)
     }
   };
 
@@ -29,7 +28,7 @@ let totalTimeHour=0
        duration = endTime - startTime;
         let durationMin = (duration/60000).toFixed(2)
       setElapsedTime(durationMin);
-     
+      setPayForThisWeek(((totalTime/3600000)*14).toFixed(2))
     }
   }, [startTime, endTime]);
   
@@ -63,10 +62,7 @@ let totalTimeHour=0
   
   return (
     <div>
-      <h2>Time At Work</h2>
-      <h4>Total Time(minutes): {totalTimeMin}</h4>
-      <h4>Total Time(hour): {totalTimeHour}</h4>
-      <h4>Pay for this Week: ${payForThisWeek}</h4>
+      <h2>Time Card</h2>
       <button onClick={handleStartClick}>Time In</button>
       
       <button onClick={handleStopClick}>Time Out</button>
@@ -75,8 +71,11 @@ let totalTimeHour=0
         {startTime && <p>Time In: {new Date(startTime).toLocaleString()}</p>}
         {endTime && <p>Time Out: {new Date(endTime).toLocaleString()}</p>}
         {elapsedTime > 0 && <p>Time at Work: {elapsedTime} minutes</p>}
-    
-      </div>
+    </div>
+    <h2>Time At Work</h2>
+      <h4>Total Time(minutes): {totalTimeMin}</h4>
+      <h4>Total Time(hour): {totalTimeHour}</h4>
+      <h4>Pay for this Week: ${payForThisWeek}</h4>
     </div>
   );
 }
