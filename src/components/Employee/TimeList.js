@@ -22,6 +22,8 @@ function TimeList() {
             <p>Time In: {record.startTime}</p>
             <p>Time Out: {record.endTime}</p>
             <p>Time at Work: {record.elapsedTime} minutes</p>
+            <p>Total Time: {record.totalTime} hours</p>
+            <p>Pay for this Week: ${record.payForThisWeek}</p>
           </li>
         ))}
         <button onClick={clearLocalStorage}>Delete Time Card</button>

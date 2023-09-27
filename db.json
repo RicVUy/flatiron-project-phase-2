@@ -5,12 +5,12 @@
       "name": "Ricardo",
       "image": "https://thewebdev.info/wp-content/uploads/2020/07/yyxtdktkrfm-1200x800.jpg",
       "password": "dolphin",
-      "position": "Cleaner",
+      "position": "Owner",
       "schedule": "Thursday, Friday, Saturday, Sunday",
       "workTime": 123,
       "payPerHour": 40,
-      "timeInEvents": "7:00",
-      "timeOutEvents": "9:00",
+      "timeInEvents": "0",
+      "timeOutEvents": "0",
       "payForThisWeek": "130"
     },
     {

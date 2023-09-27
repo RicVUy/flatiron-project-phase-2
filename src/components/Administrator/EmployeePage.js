@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import EmployeeList from './EmployeeList'
 import NewEmployeeForm from './NewEmployeeForm'
 import SearchEmployee from './SearchEmployee'
-//import EditFormSection from './EditFormSection'
 import EmployeeEdit from './EmployeeEdit'
 
 const EmployeePage = () => {
@@ -38,9 +37,7 @@ const EmployeePage = () => {
 
   const filteredEmployees = employees.filter(employee => employee.name.toLowerCase().includes(searchTerm.toLowerCase()))          
   
-  /*const onUpdateEmployee = (updatedEmployee) => {
-    setEmployee(updatedEmployee)
-  }*/
+ 
 
   return (
     <main>
@@ -60,9 +57,7 @@ const EmployeePage = () => {
        <div className="edit-employee-form-section">
         <EmployeeEdit/>
        </div>
-        {/*<div className="editFormSection">
-     <EditFormSection handleUpdateEmployee={onUpdateEmployee}/>
-  </div> */}
+        
         </main>
   )
 }

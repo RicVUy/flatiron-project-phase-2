@@ -38,6 +38,8 @@ let totalTimeHour=0
         startTime: new Date(startTime).toLocaleString(),
         endTime: new Date(endTime).toLocaleString(),
         elapsedTime: elapsedTime,
+        totalTime: totalTimeHour,
+        payForThisWeek: payForThisWeek
       };
 
       // Fetch existing timer data from JSON database
