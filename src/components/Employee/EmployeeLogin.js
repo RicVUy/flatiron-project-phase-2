@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { employees1 } from './data';
 function EmployeeLogin() {
   const [formData, setFormData] = useState({
     name: '',
@@ -22,29 +22,7 @@ function EmployeeLogin() {
     //  employee authentication 
     const { name, password } = formData;
     
-    
-     let employees1 = [
-      { 
-            id : 1,
-            name1 : "Ricardo",
-            password1: "dolphin",
-            
-      },
-      {
-            id : 2,
-            name1 : "Edna",
-            password1: "Eloise",
-           
-      },
-      {
-        id : 3,
-            name1 : "Johnny",
-            password1: "Kuro",
-            
-      }
-    ]
-    
-     for (let i=0; i<3; i++){
+     for (let i=0; i<employees1.length; i++){
     if (name === employees1[i].name1 && password === employees1[i].password1) {
       // If authentication is successful, fetch employee data
      fetchEmployeeData(name);

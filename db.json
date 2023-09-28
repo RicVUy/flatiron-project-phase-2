@@ -9,8 +9,8 @@
       "schedule": "Thursday, Friday, Saturday, Sunday",
       "workTime": 123,
       "payPerHour": 40,
-      "timeInEvents": "0",
-      "timeOutEvents": "0",
+      "timeInEvents": [],
+      "timeOutEvents": [],
       "payForThisWeek": "130"
     },
     {
@@ -35,8 +35,8 @@
       "schedule": "Tuesday,Wednesday,Thursday, Friday",
       "workTime": "190",
       "payPerHour": 33,
-      "timeInEvents": "2:00 AM",
-      "timeOutEvents": "8:49 PM",
+      "timeInEvents": [],
+      "timeOutEvents": [],
       "payForThisWeek": "540",
       "userName": "jonboy"
     },
@@ -59,7 +59,7 @@
       "password": "adobo",
       "position": "Accountant",
       "schedule": "Monday to Wednesday",
-      "workTime": "8:00 AM to 5:00 PM",
+      "workTime": 0,
       "payPerHour": 35,
       "timeInEvents": [],
       "timeOutEvents": [],
@@ -74,23 +74,23 @@
       "schedule": "Monday to Saturday",
       "workTime": 450,
       "payPerHour": 23,
-      "timeInEvents": "3:00 AM",
-      "timeOutEvents": "9:00",
-      "payForThisWeek": "0",
-      "id": 9
-    },
-    {
-      "name": "JayR Cabanban",
-      "image": "",
-      "password": "",
-      "position": "",
-      "schedule": "",
-      "workTime": 0,
-      "payPerHour": 0,
       "timeInEvents": [],
       "timeOutEvents": [],
-      "payForThisWeek": 0,
-      "id": 10
+      "payForThisWeek": "0",
+      "id": 6
+    },
+    {
+      "name": "Eloise Uy",
+      "image": "\"http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png\"",
+      "password": "Allan",
+      "position": "sales",
+      "schedule": "on Vacation",
+      "workTime": 56789,
+      "payPerHour": 31,
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "07654",
+      "id": 7
     }
   ]
 }
