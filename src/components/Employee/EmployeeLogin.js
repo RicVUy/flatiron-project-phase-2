@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { employees1 } from './data';
+import TimeTracker from './TimeTracker';
+import TimeList from './TimeList';
+
 function EmployeeLogin() {
   const [formData, setFormData] = useState({
     name: '',
@@ -93,6 +96,13 @@ function EmployeeLogin() {
           <p>Time In:{employeeData.timeInEvents}</p>
           <p>Time Out:{employeeData.timeOutEvents}</p>
           <p>Pay for this week: ${employeeData.payForThisWeek}</p>
+
+          <div id="time-in-out">
+      <TimeTracker />
+      </div>
+      <div id="time-in-out"> 
+      <TimeList />
+    </div>
         </div>
       )}
     </div>
