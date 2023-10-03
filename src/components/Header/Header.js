@@ -1,29 +1,12 @@
-import Clock from './Clock'
 
-function Header({user, setUser}) {
-  //const [] = useState(null)
+
+function Header() {
   
-
-  function handleLoginClick() {
-    setUser({
-      id: 1,
-      username: "Ricardo"
-    })
-  }
-  function handleLogoutClick() {
-    setUser(null)
-  }
-  return (
+return (
     <header>
-    <h1>TIMECARD</h1>
-    <Clock/>
-    <nav>
-   {user ? (
-    <button onClick={handleLogoutClick}>LogOut</button>
-   ) : (
-    <button onClick={handleLoginClick}>Login</button>
-   )}
-    </nav>
+     <img src="https://static.vecteezy.com/system/resources/previews/000/403/516/original/modern-company-logo-design-vector.jpg"
+       alt="logo" id="logo-image" width="300px" height="auto"/>
+    <h1>Welcome</h1>
    
     </header>
   )

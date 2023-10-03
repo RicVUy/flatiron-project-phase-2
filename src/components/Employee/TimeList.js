@@ -15,7 +15,7 @@ function TimeList() {
     };
   return (
     <div>
-     
+     <h2>Time Card</h2>
       <ul>
         {timerData.map((record, index) => (
           <li key={index}>

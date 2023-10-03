@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { employees1 } from './data';
-import TimeTracker from './TimeTracker';
+import TimeElapsed from './TimeElapsed';
 import TimeList from './TimeList';
 
 function EmployeeLogin() {
@@ -32,7 +32,7 @@ function EmployeeLogin() {
       setLoginError('');
     } else {
       setEmployeeData(null);
-      setLoginError('Invalid name or password');
+      //setLoginError('Invalid name or password');
     }
    
   }};
@@ -89,6 +89,8 @@ function EmployeeLogin() {
         <div>
           <h2>Employee Data</h2>
           <p>Name: {employeeData.name}</p>
+          <img src={employeeData.image} alt={employeeData.name}/>
+          <p>Password:{employeeData.password}</p>
           <p>Position: {employeeData.position}</p>
           <p>schedule:{employeeData.schedule}</p>
           <p>WorkTime:{employeeData.workTime}</p>
@@ -98,7 +100,7 @@ function EmployeeLogin() {
           <p>Pay for this week: ${employeeData.payForThisWeek}</p>
 
           <div id="time-in-out">
-      <TimeTracker />
+      <TimeElapsed />
       </div>
       <div id="time-in-out"> 
       <TimeList />

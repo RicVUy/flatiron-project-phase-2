@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { employees1 } from './data';
+import Clock from '../Header/Clock';
+
 function TimeElapsed() {
   const [startTime, setStartTime] = useState(null);
   const [endTime, setEndTime] = useState(null);
@@ -27,7 +29,7 @@ let totalTimeHour=0
        duration = endTime - startTime;
         let durationMin = (duration/60000).toFixed(2)
       setElapsedTime(durationMin);
-      setPayForThisWeek(((totalTime/3600000)*(employees1[3])).toFixed(2))
+      setPayForThisWeek(((totalTime/3600000)*(employees1[3].payPerHour)).toFixed(2))
     }
   }, [startTime, endTime]);
   
@@ -63,7 +65,8 @@ let totalTimeHour=0
   
   return (
     <div>
-      <h2>Time Card</h2>
+      <h2>Punch Clock</h2>
+      <Clock/>
       <button onClick={handleStartClick}>Time In</button>
       
       <button onClick={handleStopClick}>Time Out</button>
