@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { employees1 } from './data';
 function TimeElapsed() {
   const [startTime, setStartTime] = useState(null);
   const [endTime, setEndTime] = useState(null);
@@ -18,8 +18,7 @@ let totalTimeHour=0
     if (startTime) {
       setEndTime(Date.now());
       setTotalTime(totalTime + (Date.now() - startTime));
-       //setPayForThisWeek(((totalTime/60000)*14).toFixed(2))
-       console.log(payForThisWeek)
+       
     }
   };
 
@@ -28,7 +27,7 @@ let totalTimeHour=0
        duration = endTime - startTime;
         let durationMin = (duration/60000).toFixed(2)
       setElapsedTime(durationMin);
-      setPayForThisWeek(((totalTime/3600000)*14).toFixed(2))
+      setPayForThisWeek(((totalTime/3600000)*(employees1[3])).toFixed(2))
     }
   }, [startTime, endTime]);
   
