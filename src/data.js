@@ -57,4 +57,17 @@ id : 6,
 }
 
 ]
-export { employees1}
+
+const admin =[
+    {
+        id : 1,
+        name :"James",
+        password: "Stephen",
+    },
+    {
+        id : 2,
+        name :"Vivien",
+        password: "Gertrude"
+    }
+]
+export { employees1, admin}

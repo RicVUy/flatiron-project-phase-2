@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import EmployeeList from './EmployeeList'
 import NewEmployeeForm from './NewEmployeeForm'
 import SearchEmployee from './SearchEmployee'
-import EmployeeEdit from './EmployeeEdit'
+//import EmployeeEdit from './EmployeeEdit'
 
 const EmployeePage = () => {
     const [employees, setEmployees] = useState([])
@@ -54,9 +54,7 @@ const EmployeePage = () => {
         <div id="employeeForm">
        <NewEmployeeForm onAddEmployee={handleAddEmployee}/>
        </div>
-       <div className="edit-employee-form-section">
-        <EmployeeEdit/>
-       </div>
+       
         
         </main>
   )

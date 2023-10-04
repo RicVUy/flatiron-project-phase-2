@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { employees1 } from './data';
+import { employees1 } from '../../data';
 import TimeElapsed from './TimeElapsed';
 import TimeList from './TimeList';
 

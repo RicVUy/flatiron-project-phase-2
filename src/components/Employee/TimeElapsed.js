@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { employees1 } from './data';
+import { employees1 } from '../../data';
 import Clock from '../Header/Clock';
 
 function TimeElapsed() {
