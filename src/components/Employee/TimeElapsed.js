@@ -69,10 +69,10 @@ let totalTimeHour=0
       <h1 className='see'>
       <Clock/>
       </h1>
-      <button onClick={handleStartClick}>Time In</button>
+      <button onClick={handleStartClick} className='time'>Time In</button>
       
-      <button onClick={handleStopClick}>Time Out</button>
-      <button onClick={handleSaveClick}>Save</button>
+      <button onClick={handleStopClick} className='time'>Time Out</button>
+      <button onClick={handleSaveClick} className='save'>Save</button>
 <div>
         {startTime && <p>Time In: {new Date(startTime).toLocaleString()}</p>}
         {endTime && <p>Time Out: {new Date(endTime).toLocaleString()}</p>}

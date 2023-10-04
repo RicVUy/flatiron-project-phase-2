@@ -40,7 +40,7 @@ function NewEmployeeForm({onAddEmployee}) {
         body: JSON.stringify(formData)
       }
 
-      fetch("http://localhost:3001/employees", configObj)
+      fetch("/employees", configObj)
       .then(r => r.json())
       .then(employee => onAddEmployee(employee))
 

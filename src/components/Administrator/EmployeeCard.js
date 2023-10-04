@@ -16,7 +16,7 @@ function EmployeeCard ({employee,  onDeleteEmployee}) {
 
     
       function handleDelete(params) {
-        fetch(`http://localhost:3001/employees/${id}`, {
+        fetch(`/employees/${id}`, {
           method: "DELETE"
         })
         .then(onDeleteEmployee(id))
@@ -24,17 +24,18 @@ function EmployeeCard ({employee,  onDeleteEmployee}) {
 
     return (
         <div className="card">
+          <h2>EMPLOYEE</h2>
            <ul>
-           <li>{name}</li>
+           <li>NAME:  {name}</li>
            <img src={image} alt={name} />
-           <li>{password}</li>
-           <li>position:{position}</li>
-           <li>schedule:{schedule}</li>
-           <li>WorkTime:{workTime}</li>
-           <li>Pay per hour:${payPerHour}</li>
-           <li>Time In:{timeInEvents}</li>
-           <li>Time Out:{timeOutEvents}</li>
-           <li>Pay for this week: ${payForThisWeek}</li>
+           <li>PASSWORD: {password}</li>
+           <li>POSITION:{position}</li>
+           <li>SCHEDULE:{schedule}</li>
+           <li>TIME TO WORK:{workTime}</li>
+           <li>HOURLY PAY:${payPerHour}</li>
+           <li>TIME IN:{timeInEvents}</li>
+           <li>TIME OUT:{timeOutEvents}</li>
+           <li>PAY FOR THIS WEEK: ${payForThisWeek}</li>
            </ul>
            <button onClick={handleDelete}>Delete</button>
            

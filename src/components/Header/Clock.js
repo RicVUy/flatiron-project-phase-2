@@ -18,7 +18,7 @@ function Clock() {
     second: '2-digit', 
   })
 
-  return <div>{time.toString()}</div>;
+  return <div>{formattedTime.toString()}</div>;
 }
 
 

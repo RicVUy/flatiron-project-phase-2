@@ -1,6 +1,7 @@
 {
   "name": "flatiron-project-phase-2",
   "version": "0.1.0",
+  "proxy": "http://localhost:3001",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -37,4 +38,5 @@
       "last 1 safari version"
     ]
   }
+  
 }

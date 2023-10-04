@@ -34,10 +34,10 @@
       "position": "Maintenance",
       "schedule": "Tuesday,Wednesday,Thursday, Friday",
       "workTime": "190",
-      "payPerHour": 20,
-      "timeInEvents": [],
+      "payPerHour": "20",
+      "timeInEvents": "3:50",
       "timeOutEvents": [],
-      "payForThisWeek": "540",
+      "payForThisWeek": "2000001",
       "userName": "jonboy"
     },
     {

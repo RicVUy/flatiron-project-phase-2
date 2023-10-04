@@ -12,7 +12,7 @@ function EmployeeEdit() {
     e.preventDefault();
 
     // Fetch employee data based on the entered ID
-    fetch(`http://localhost:3001/employees/${employeeId}`)
+    fetch(`/employees/${employeeId}`)
       .then((resp) => {
         if (resp.status === 404) {
           throw new Error('Employee not found');
@@ -30,7 +30,7 @@ function EmployeeEdit() {
 
   const handleUpdateEmployee = (updatedData) => {
     // Send a PATCH request to update the employee using updatedData
-    fetch(`http://localhost:3001/employees/${employeeId}`, {
+    fetch(`/employees/${employeeId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ function EmployeeEdit() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        // Handle the response from the server, if needed
+        // Handle the response from the server
         console.log('Employee updated:', data);
       })
       .catch((error) => {
@@ -48,8 +48,8 @@ function EmployeeEdit() {
   };
        
   return (
-    <div>
-      <h2>Update Employee</h2>
+    <div className='searchbar'>
+      <h2 className='box1'>Update Employee</h2>
       <form onSubmit={handleFormSubmit}>
         <div>
           <label>Enter Employee ID:</label>
@@ -73,8 +73,8 @@ function EmployeeEdit() {
 }
 
 function EmployeeUpdateForm({ employeeData, onUpdateEmployee }) {
-  // Create state variables for the fields you want to update
-  //const [id, setId] = useState(employeeData.id);
+  // Create state variables for the fields  to update
+  
   const [name, setName] = useState(employeeData.name);
   const [image, setImage] = useState(employeeData.image);
   const [userName, setUserName] = useState(employeeData.userName);
@@ -87,7 +87,7 @@ function EmployeeUpdateForm({ employeeData, onUpdateEmployee }) {
   const [timeOutEvents, setTimeOutEvents] = useState(employeeData.timeOutEvents);
   const [payForThisWeek, setPayForThisWeek] = useState(employeeData.payForThisWeek);
   
-  // Add other fields here
+  
 
   const handleUpdateClick = () => {
     // Construct updatedData object with the fields you want to update
@@ -103,7 +103,7 @@ function EmployeeUpdateForm({ employeeData, onUpdateEmployee }) {
     timeInEvents,
     timeOutEvents,
     payForThisWeek,
-      // Add other fields here
+      
     };
 
     onUpdateEmployee(updatedData);
@@ -160,7 +160,7 @@ function EmployeeUpdateForm({ employeeData, onUpdateEmployee }) {
         <input type="text" value={payForThisWeek} onChange={(e) => setPayForThisWeek(e.target.value)} />
       </div>
 
-      {/* Add other input fields for the fields you want to update */}
+      
       <button onClick={handleUpdateClick}>Update Employee</button>
       
     </div>
@@ -168,3 +168,4 @@ function EmployeeUpdateForm({ employeeData, onUpdateEmployee }) {
 }
 
 export default EmployeeEdit;
+ 

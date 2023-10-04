@@ -87,7 +87,8 @@ function EmployeeLogin() {
 
       {employeeData && (
         <div>
-          <h2>Employee Data</h2>
+          
+          <h2 className='box'>Employee Data</h2>
           <p>Name: {employeeData.name}</p>
           <img src={employeeData.image} alt={employeeData.name}/>
           <p>Password:{employeeData.password}</p>

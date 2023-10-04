@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './index.css';
 import EmployeePage from './components/Administrator/EmployeePage';
-//import Person from './components/Employee/Person';
 import Header from './components/Header/Header';
 import EmployeeEdit from './components/Administrator/EmployeeEdit';
 import EmployeeLogin from './components/Employee/EmployeeLogin';
@@ -17,14 +16,14 @@ function App() {
     <div>
     <NavBar />
       <Switch>
-      <Route exact path="/EmployeeLogin">
-          <EmployeeLogin />
+      <Route  path="/EmployeeLogin">
+          <EmployeeLogin isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>
         </Route>
-        <Route exact path="/TimeElapsed">
-          <TimeElapsed />
+        <Route  path="/TimeElapsed">
+        {isLoggedIn ?   <TimeElapsed /> : <Redirect to="/EmployeeLogin" />}
         </Route>
-        <Route exact path="/TimeList">
-          <TimeList />
+        <Route  path="/TimeList">
+        {isLoggedIn ?  <TimeList /> : <Redirect to="/EmployeeLogin" />}
         </Route>
         <Route path="/AdminLogin">
         <AdminLogin isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
@@ -32,12 +31,7 @@ function App() {
       <Route path="/EmployeePage">
         {isLoggedIn ? <EmployeePage /> : <Redirect to="/AdminLogin" />}
       </Route>
-       {/*} <Route exact path="/EmployeePage">
-          <EmployeePage />
-  </Route>
-        <Route exact path="/EmployeeEdit">
-          <EmployeeEdit />
-        </Route>*/}
+      
         <Route path="/EmployeeEdit">
         {isLoggedIn ? <EmployeeEdit /> : <Redirect to="/AdminLogin" />}
       </Route>

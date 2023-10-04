@@ -7,10 +7,10 @@ import SearchEmployee from './SearchEmployee'
 const EmployeePage = () => {
     const [employees, setEmployees] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
-    //const [employee, setEmployee] = useState({})
+    
 
     useEffect(() => {
-        fetch("http://localhost:3001/employees")
+        fetch("/employees")
         .then(r => r.json())
         .then(setEmployees) 
           },[])
