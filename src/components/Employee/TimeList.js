@@ -14,11 +14,11 @@ function TimeList() {
     setTimerData([]);
     };
   return (
-    <div>
+    <div id='card'>
      <h2>Time Card</h2>
       <ul>
         {timerData.map((record, index) => (
-          <li key={index}>
+          <li key={index} id='space'>
             <p>Time In: {record.startTime}</p>
             <p>Time Out: {record.endTime}</p>
             <p>Time at Work: {record.elapsedTime} minutes</p>

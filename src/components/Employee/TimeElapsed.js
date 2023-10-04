@@ -65,8 +65,10 @@ let totalTimeHour=0
   
   return (
     <div>
-      <h2>Punch Clock</h2>
+      <h2 className='pc'>Punch Clock</h2>
+      <h1 className='see'>
       <Clock/>
+      </h1>
       <button onClick={handleStartClick}>Time In</button>
       
       <button onClick={handleStopClick}>Time Out</button>

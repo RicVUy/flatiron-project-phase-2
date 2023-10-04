@@ -113,12 +113,3 @@ function EmployeeLogin() {
 
 export default EmployeeLogin;
 
-/*Fetch employee data from db.json
-    fetch("http://localhost:3000/employees")
-      .then((resp) => resp.json())
-      .then((data) => {
-        // Find the employee with the inputted name
-        const employee = data.employees.find(
-          (employee) =>
-            employee.name === formData.name && employee.password === formData.password
-        );*/

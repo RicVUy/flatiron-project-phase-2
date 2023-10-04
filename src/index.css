@@ -122,3 +122,26 @@ padding: 15px 20px 18px 18px;
 border-radius: 5px;
 box-shadow: 2px 5px 5px #333;
 }
+.pc {
+  position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+border: 1px solid #333;
+background: rgba(179, 255, 0, 0.692);
+padding: 15px 20px 18px 18px;
+border-radius: 5px;
+box-shadow: 2px 5px 5px #333;
+}
+#card {
+  text-align:center;
+  border: 5px solid rgb(0, 45, 128);
+  width: 50%;
+  background: rgba(255, 0, 0, 0.3);
+  margin-left:25%;
+  margin-right:50%;
+  }
+  #space {
+    justify-content: space-between;
+  }

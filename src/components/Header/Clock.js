@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-
-// fetching data (key!), setInterval, update part of the page outside React
 function Clock() {
   const [time, setTime] = useState(new Date());
 
@@ -10,6 +8,15 @@ function Clock() {
       setTime(new Date());
     }, 1000);
   }, []);
+  const formattedTime = time.toLocaleString(undefined, {
+    weekday: 'short', 
+    month: 'short',   
+    day: '2-digit',   
+    year: 'numeric', 
+    hour: '2-digit',  
+    minute: '2-digit', 
+    second: '2-digit', 
+  })
 
   return <div>{time.toString()}</div>;
 }
