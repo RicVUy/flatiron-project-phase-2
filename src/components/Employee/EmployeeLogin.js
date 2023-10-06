@@ -32,7 +32,7 @@ function EmployeeLogin() {
       setLoginError('');
     } else {
       setEmployeeData(null);
-      //setLoginError('Invalid name or password');
+      setLoginError('Invalid name or password');
     }
    
   }};
@@ -41,7 +41,7 @@ function EmployeeLogin() {
   const fetchEmployeeData = (name) => {
     // Fetch employee data based on the provided name
     
-    fetch(`http://localhost:3001/employees?name=${name}`)
+    fetch(`/employees?name=${name}`)
       .then((resp) => resp.json())
       .then((data) => {
         // Assuming data is an array with one employee object

@@ -155,9 +155,9 @@ box-shadow: 2px 5px 5px #333;
 #card {
   text-align:center;
   border: 5px solid rgb(0, 45, 128);
-  width: 70%;
+  width: 60%;
   background: rgba(255, 0, 0, 0.3);
-  margin-left:45%;
+  margin-left:15%;
   margin-right:50%;
   }
   #space {
@@ -179,9 +179,9 @@ box-shadow: 2px 5px 5px #333;
 .box1 {
   text-align:center;
   border: 5px solid rgb(128, 0, 122);
-  width: 100%;
-  margin-left:1%;
-  margin-right:60%;
+  width: 70%;
+  margin-left:20%;
+  margin-right:20%;
 }
 .save {
   text-align:center;

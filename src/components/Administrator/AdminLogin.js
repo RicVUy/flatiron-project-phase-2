@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { admin } from '../../data';
 
-function AdminLogin({ isLoggedIn, setLoggedIn })  {
+function AdminLogin( { isLoggedIn, setLoggedIn })  {
  
       const [formData, setFormData] = useState({
         name: '',
         password: '',
       });
     
-      
-     // const [loginError, setLoginError] = useState('');
+      //const [employeeData, setEmployeeData] = useState(null);
+      const [loginError, setLoginError] = useState("");
       
       const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -21,15 +21,20 @@ function AdminLogin({ isLoggedIn, setLoggedIn })  {
     
     
     
-        //  employee authentication 
+        //  admin authentication 
         const { name, password } = formData;
         
          for (let i=0; i<admin.length; i++){
         if (name === admin[i].name && password === admin[i].password) {
-          // If authentication is successful, fetch employee data
-          setLoggedIn(true);
+          // If authentication is successful, redirect to path
+         setLoggedIn(true);
+        setLoginError({loginError})
+          } else {
           
-        } 
+            //setEmployeeData(null);
+      setLoginError('Invalid name or password');
+     
+          }
     };
       }
     
@@ -57,9 +62,11 @@ function AdminLogin({ isLoggedIn, setLoggedIn })  {
         </div>
         <button type="submit">Login</button>
       </form>
-
+           
       
       </div>
     );
   };
   export default AdminLogin
+
+ // { isLoggedIn, setLoggedIn }

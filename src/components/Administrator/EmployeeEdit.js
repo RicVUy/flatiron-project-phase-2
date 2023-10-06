@@ -48,7 +48,7 @@ function EmployeeEdit() {
   };
        
   return (
-    <div className='searchbar'>
+    <div className='card'>
       <h2 className='box1'>Update Employee</h2>
       <form onSubmit={handleFormSubmit}>
         <div>
@@ -59,7 +59,7 @@ function EmployeeEdit() {
             onChange={handleEmployeeIdChange}
           />
         </div>
-        <button type="submit">Fetch Employee</button>
+        <button type="submit" className='time'>Update Employee Profile</button>
       </form>
 
       {employeeData && (
@@ -90,7 +90,7 @@ function EmployeeUpdateForm({ employeeData, onUpdateEmployee }) {
   
 
   const handleUpdateClick = () => {
-    // Construct updatedData object with the fields you want to update
+    // Construct updatedData object with the fields to update
     const updatedData = {
       name,
       image,

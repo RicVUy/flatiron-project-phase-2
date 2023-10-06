@@ -2,7 +2,7 @@ const employees1 = [
     { 
         id : 1,
         name1 : "Ricardo",
-        password1: "dolphin",
+        password1: "kamikaze",
         payPerHour:20,
         workTime:0,
         payForThisWeek:0,

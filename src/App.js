@@ -16,14 +16,14 @@ function App() {
     <div>
     <NavBar />
       <Switch>
-      <Route  path="/EmployeeLogin">
-          <EmployeeLogin isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>
+      <Route exact path="/EmployeeLogin">
+          <EmployeeLogin />
         </Route>
-        <Route  path="/TimeElapsed">
-        {isLoggedIn ?   <TimeElapsed /> : <Redirect to="/EmployeeLogin" />}
+        <Route exact path="/TimeElapsed">
+          <TimeElapsed />
         </Route>
-        <Route  path="/TimeList">
-        {isLoggedIn ?  <TimeList /> : <Redirect to="/EmployeeLogin" />}
+        <Route exact path="/TimeList">
+          <TimeList />
         </Route>
         <Route path="/AdminLogin">
         <AdminLogin isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
