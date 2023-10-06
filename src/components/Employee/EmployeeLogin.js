@@ -3,7 +3,7 @@ import { employees1 } from '../../data';
 import TimeElapsed from './TimeElapsed';
 import TimeList from './TimeList';
 
-function EmployeeLogin() {
+function EmployeeLogin({ isLoggedInE, setLoggedInE }) {
   const [formData, setFormData] = useState({
     name: '',
     password: '',
@@ -28,6 +28,7 @@ function EmployeeLogin() {
      for (let i=0; i<employees1.length; i++){
     if (name === employees1[i].name1 && password === employees1[i].password1) {
       // If authentication is successful, fetch employee data
+      setLoggedInE(true);
      fetchEmployeeData(name);
       setLoginError('');
     } else {
