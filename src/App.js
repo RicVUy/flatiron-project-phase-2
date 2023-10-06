@@ -12,18 +12,19 @@ import NavBar from './components/Header/NavBar';
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedInE, setLoggedInE] = useState(false);
   return (
     <div>
     <NavBar />
       <Switch>
       <Route exact path="/EmployeeLogin">
-          <EmployeeLogin />
+      <EmployeeLogin isLoggedInE={isLoggedInE} setLoggedIn={setLoggedInE}/>
         </Route>
-        <Route exact path="/TimeElapsed">
-          <TimeElapsed />
+        <Route  path="/TimeElapsed">
+        {isLoggedInE ? <TimeElapsed /> : <Redirect to="/EmployeeLogin" />}
         </Route>
-        <Route exact path="/TimeList">
-          <TimeList />
+        <Route  path="/TimeList">
+        {isLoggedInE ?  <TimeList /> : <Redirect to="/EmployeeLogin" />}
         </Route>
         <Route path="/AdminLogin">
         <AdminLogin isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
