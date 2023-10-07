@@ -16,8 +16,8 @@ return (
    <p>-------------------------</p>
    <p>password for Administration login:</p> 
    <p>name: Mer</p>
-   <p>password: Em1234</p> 
-
+<p>password: Em1234</p> 
+  
     </header>
   )
 }

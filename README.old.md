@@ -47,18 +47,21 @@ I. Employee
      A.
    1. All the employee's information will be shown.
    2. A Punch Clock card where:
-    a. the current date and time is shown
-    b. Time In button where the employee should click to record his time of arrival.
-    c. Time Out button where the employee should click to record his time of departure.
+    a. The current date and time is shown.
+    
+    b. Time In-button where the employee should click to record his time of arrival.
+    
+    c. Time Out-button where the employee should click to record his time of departure.
+    
     d. After clicking the time out button, the number of hours that he worked, and the amount of salary that he should be paid will be shown 
-    d.  To save all this information in the time card, he should click the save button.
+    
+    e.  To save all this information in the time card, he should click the save button.
+   
    3. Below the Punch Clock is a Time Card which will show all his Time in and out information. All of this will be recorded until the employee decided to click the Delete Time Card button, after which everything will be deleted.
     
-    B. 
-     Also, after logging in and if he chooses, He can click open the punch clock and the time card in the nav bar and use them.
- 
-   C.
- If login failed, It will not open and  the punch clock and time card could not be clicked.
+   4. Also, after logging in and if he chooses, He can click open the punch clock and the time card shown in the nav bar and use them.
+  
+   5.If login failed, It will not open and  the punch clock and time card could not be clicked.
 
 II. Administrator 
  
@@ -117,4 +120,6 @@ Limitations of the App:
 
  -------------------------------------------------------------------------
 
-      
+      Watch on YouTube:
+
+      https://www.youtube.com/watch?v=r5PKeKqU0ss
