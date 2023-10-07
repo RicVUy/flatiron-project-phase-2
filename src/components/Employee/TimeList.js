@@ -22,7 +22,7 @@ function TimeList() {
             <p>Time In: {record.startTime}</p>
             <p> Time Out: {record.endTime}</p>
             <p>{" "}</p>
-            <p>Total Time: {record.totalTime} hours</p>
+            <p> Time At Work this Period: {record.totalTime} hours</p>
              <p>Pay for this Period: ${record.payForThisWeek}</p>
              <p>-----------------------------------------------</p>
           </li>
