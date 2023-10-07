@@ -159,3 +159,9 @@ This app can be installed by copying the github URL and forking and cloning  thi
 --------------------------------------------------------------------------
 
 Great appreciation to all the dedicated instructors and coaches of Flatiron School, without whom this project will not be possible.
+
+-----------------------------------------------------------------------
+
+MIT License
+
+---------------------------------------------------------------------------
