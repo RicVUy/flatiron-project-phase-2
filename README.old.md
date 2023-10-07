@@ -120,6 +120,42 @@ Limitations of the App:
 
  -------------------------------------------------------------------------
 
-      Watch on YouTube:
+      
+Please click the link to see a walk-through video:
 
-      https://www.youtube.com/watch?v=r5PKeKqU0ss
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=r5PKeKqU0ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     
+------------------------------------------------------------------------
+
+SCREENSHOTS
+
+1. The app as it appears when reloaded:
+![Alt text](<Screenshot (383).png>)
+
+-----------------------------------------------------------------
+
+2. After logging in as an Employee and clicking the Punch Clock:
+![Alt text](<Screenshot (384).png>)
+
+----------------------------------------------------------------------
+
+3. After logging in as an Employee and clicking the Time Card:
+![Alt text](<Screenshot (385).png>)
+
+----------------------------------------------------------------------
+
+4.  After logging in as Administrator and clicking All Employees:
+![Alt text](<Screenshot (386).png>)
+
+----------------------------------------------------------------------
+
+5.  After logging in as Administrator and clicking Employee Edit:
+![Alt text](<Screenshot (387).png>)
+
+--------------------------------------------------------------------------
+
+This app can be installed by copying the github URL and forking and cloning  this repository from my github account, or copy and paste the URL of the project repository, If not yet installed, Type in the terminal:npm install react-router-dom@5, then npm run server, then in another terminal: npm start.
+
+--------------------------------------------------------------------------
+
+Great appreciation to all the dedicated instructors and coaches of Flatiron School, without whom this project will not be possible.
