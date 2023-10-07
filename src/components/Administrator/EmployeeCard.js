@@ -26,16 +26,16 @@ function EmployeeCard ({employee,  onDeleteEmployee}) {
         <div className="card">
           <h2>EMPLOYEE</h2>
            <ul>
-           <li>NAME:  {name}</li>
+           <h3>NAME:  {name}</h3>
            <img src={image} alt={name} />
-           <li>PASSWORD: {password}</li>
-           <li>POSITION:{position}</li>
-           <li>SCHEDULE:{schedule}</li>
-           <li>TIME TO WORK:{workTime}</li>
-           <li>HOURLY PAY:${payPerHour}</li>
-           <li>TIME IN:{timeInEvents}</li>
-           <li>TIME OUT:{timeOutEvents}</li>
-           <li>PAY FOR THIS WEEK: ${payForThisWeek}</li>
+           <h4>PASSWORD: {password}</h4>
+           <h4>POSITION:{position}</h4>
+           <h4>SCHEDULE:{schedule}</h4>
+           <h4>TIME TO WORK:{workTime}</h4>
+           <h4>HOURLY PAY:${payPerHour}</h4>
+           <h4>TIME IN:{timeInEvents}</h4>
+           <h4>TIME OUT:{timeOutEvents}</h4>
+           <h4>PAY FOR THIS WEEK: ${payForThisWeek}</h4>
            </ul>
            <button onClick={handleDelete}>Delete</button>
            

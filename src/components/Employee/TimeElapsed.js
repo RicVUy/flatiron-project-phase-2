@@ -74,9 +74,9 @@ let totalTimeHour=0
       <button onClick={handleStopClick} className='time'>Time Out</button>
       <button onClick={handleSaveClick} className='save'>Save</button>
 <div>
-        {startTime && <p>Time In: {new Date(startTime).toLocaleString()}</p>}
-        {endTime && <p>Time Out: {new Date(endTime).toLocaleString()}</p>}
-        {elapsedTime > 0 && <p>Time at Work: {elapsedTime} minutes</p>}
+        {startTime && <h3>Time In: {new Date(startTime).toLocaleString()}</h3>}
+        {endTime && <h3>Time Out: {new Date(endTime).toLocaleString()}</h3>}
+        {elapsedTime > 0 && <h3>Time at Work: {elapsedTime} minutes</h3>}
     </div>
     <h2>Time At Work</h2>
       <h4>Total Time(minutes): {totalTimeMin}</h4>

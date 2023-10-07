@@ -1,13 +1,13 @@
 # flatiron-project-phase-2
 
- A Company App for Administrator and Employee Use
+ A COMPANY APP FOR ADMINISTRATOR AND EMPLOYEE USE
 
 
 App Summary Description:
 
-   A. has Employee log in-
+       A. has Employee log in-
    
-         if and after employee log in:
+         If and after employee log in:
       it will open to : 1. the employee's profile page
                         2. the Time Card
                  where:  - an employee can time in and time out
@@ -15,42 +15,61 @@ App Summary Description:
                          -show total amount of time at work
                          -show the total amount of pay to be received for that week
                  
-  B. has Admin log in-
+       B. has Admin log in-
          
-         if and after admin log in:
+         If and after admin log in:
       Admin may click open any of the page for:
        1. Showing all employee profile( where the admin can delete an     employee) 
           Searching an employee to show his profile or information 
           Adding a new employee and his profile
        2. Updating the profile of employee
 
- App Detailed Description:      
+--------------------------------------------------------------------------
+
+
+App Detailed Description: 
+     
 
 This app is intended for the use of both the administrator and employees of a company.
 
 I. Employee
 
- The employee must click the Employee log in button, where he will be asked to enter his name and password. 
+ The employee must click the Employee log in button, where he will be asked to enter his name and password.
+  
+  To log in as an employee, use the following:   
+                        
+                        name-  Ricardo      password-  kamikaze
+           or           name-  Edna         password-  Eloise
+           or any of the name and password shown in the db.json
+                   or in data.js
  If login is successful, The following will appear:
- A.
- 1. All the employee's information will be shown.
- 2. A Punch Clock card where:
+   
+     A.
+   1. All the employee's information will be shown.
+   2. A Punch Clock card where:
     a. the current date and time is shown
     b. Time In button where the employee should click to record his time of arrival.
-    c. Time Out button where the employee should click to record his time of departure from the location.
+    c. Time Out button where the employee should click to record his time of departure.
     d. After clicking the time out button, the number of hours that he worked, and the amount of salary that he should be paid will be shown 
     d.  To save all this information in the time card, he should click the save button.
- 3. Below the Punch Clock is a Time Card which will show all his Time in and out information. All of this will be recorded until the employee decided to click the Delete Time Card button, after which everything will be deleted.
- B. 
- Also, after logging in and if he chooses, He can click open the punch clock and the time card in the nav bar and use them.
+   3. Below the Punch Clock is a Time Card which will show all his Time in and out information. All of this will be recorded until the employee decided to click the Delete Time Card button, after which everything will be deleted.
+    
+    B. 
+     Also, after logging in and if he chooses, He can click open the punch clock and the time card in the nav bar and use them.
  
- C.
- If login is unsuccessful or failed, He will not be able to open it.
+   C.
+ If login failed, It will not open and  the punch clock and time card could not be clicked.
 
 II. Administrator 
  
- The Admin must click the Administrator log in button in the nav bar
-After the Admin click this button, he will be asked to log in with his(admin) name and password. If the log in is successful, He will be able to click open the:
+ The Admin may click the Administrator log in button, or the All Employees button, or the Employee Edit and he will be asked to log in with his(admin) name and password. 
+ 
+ To try this use the following:     
+                       
+                       name:  James     password:   Stephen
+          or           name:  Vivien     password:   Gertrude
+        
+After logging in, He should be able to click open the:
 
 A. Employee Page button
 Clicking this button will show
@@ -62,11 +81,40 @@ The employee card will show the employee he is searching for.
 
 B. Edit Employee button-
 Clicking this button will show,
-1. An update Employee card where he must enter the ID number of the employee,
+1. An update Employee card where he must enter the ID number of the employee and click the update button,
 2. If the ID number is correct, a form will appear where he can change one or more informations about the employee such as password, pay per hour, schedule etc., then he should click the update button to make the changes persist in the database.
 
  C.
- If login is unsuccessful or failed, He will not be able to open A and B.
+ If login failed, He will not be able to open A and B.
   
   
 III. To go back to the home page, click the home button.
+
+
+--------------------------------------------------------------------------
+
+Limitations of the App:
+       
+       This app is still a work in progress. Specifically the following major problems need to be addressed:
+
+       1.  After timing in, and if the employee closes the app at this point, the time in information is not yet saved, the employee must wait for the time to time out and then click the save button to save them in local storage. 
+       
+         Although the total time worked and total Pay for the week are
+         adding up and showing in the punch clock info card, they are not adding up in the time card. 
+         
+         The pay per hour needed to calculate the pay for the week should be fetched from the database and not just coming fron the data.js component.
+         
+         Also the time card information is just persisting in local storage and is not going to the employee's information in the json database. 
+           
+         
+       2. A better authentication system for the employee  and admin login
+       is needed. The name and password should be fetched from the database and not from the data.js. 
+          
+          Log out features should be added.
+
+       
+       Any suggestions to solve these problems or for further improvement of this app are very much appreciated.
+
+ -------------------------------------------------------------------------
+
+      

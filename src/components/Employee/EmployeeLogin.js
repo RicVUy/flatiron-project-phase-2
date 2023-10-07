@@ -3,7 +3,7 @@ import { employees1 } from '../../data';
 import TimeElapsed from './TimeElapsed';
 import TimeList from './TimeList';
 
-function EmployeeLogin({ isLoggedInE, setLoggedInE }) {
+function EmployeeLogin({ setLoggedInE }) {
   const [formData, setFormData] = useState({
     name: '',
     password: '',
@@ -33,7 +33,7 @@ function EmployeeLogin({ isLoggedInE, setLoggedInE }) {
       setLoginError('');
     } else {
       setEmployeeData(null);
-      setLoginError('Invalid name or password');
+      //setLoginError('Invalid name or password');
     }
    
   }};
@@ -89,17 +89,17 @@ function EmployeeLogin({ isLoggedInE, setLoggedInE }) {
       {employeeData && (
         <div>
           
-          <h2 className='box'>Employee Data</h2>
-          <p>Name: {employeeData.name}</p>
+          <h2 className='box'>Employee PROFILE</h2>
+          <h3>NAME: {employeeData.name}</h3>
           <img src={employeeData.image} alt={employeeData.name}/>
-          <p>Password:{employeeData.password}</p>
-          <p>Position: {employeeData.position}</p>
-          <p>schedule:{employeeData.schedule}</p>
-          <p>WorkTime:{employeeData.workTime}</p>
-          <p>Pay per hour:${employeeData.payPerHour}</p>
-          <p>Time In:{employeeData.timeInEvents}</p>
-          <p>Time Out:{employeeData.timeOutEvents}</p>
-          <p>Pay for this week: ${employeeData.payForThisWeek}</p>
+          <h4>PASSWORD:{employeeData.password}</h4>
+          <h4>POSITION: {employeeData.position}</h4>
+          <h4>SCHEDULE:{employeeData.schedule}</h4>
+          <h4>WORKTIME:{employeeData.workTime}</h4>
+          <h4>PAY PER HOUR:${employeeData.payPerHour}</h4>
+          <h4>TIME IN EVENTS:{employeeData.timeInEvents}</h4>
+          <h4>TIME OUT EVENTS:{employeeData.timeOutEvents}</h4>
+          <h4>PAY FOR THIS WEEK: ${employeeData.payForThisWeek}</h4>
 
           <div id="time-in-out">
       <TimeElapsed />

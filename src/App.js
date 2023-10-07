@@ -18,7 +18,7 @@ function App() {
     <NavBar />
       <Switch>
       <Route exact path="/EmployeeLogin">
-      <EmployeeLogin isLoggedInE={isLoggedInE} setLoggedIn={setLoggedInE}/>
+      <EmployeeLogin isLoggedInE={isLoggedInE} setLoggedInE={setLoggedInE}/>
         </Route>
         <Route  path="/TimeElapsed">
         {isLoggedInE ? <TimeElapsed /> : <Redirect to="/EmployeeLogin" />}
@@ -29,14 +29,14 @@ function App() {
         <Route path="/AdminLogin">
         <AdminLogin isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
       </Route>
-      <Route path="/EmployeePage">
+      <Route exact path="/EmployeePage">
         {isLoggedIn ? <EmployeePage /> : <Redirect to="/AdminLogin" />}
       </Route>
       
         <Route path="/EmployeeEdit">
         {isLoggedIn ? <EmployeeEdit /> : <Redirect to="/AdminLogin" />}
       </Route>
-        <Route exact path="/">
+        <Route path="/">
           <Header />
         </Route>
       </Switch>

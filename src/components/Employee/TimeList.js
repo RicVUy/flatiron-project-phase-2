@@ -20,10 +20,11 @@ function TimeList() {
         {timerData.map((record, index) => (
           <li key={index} id='space'>
             <p>Time In: {record.startTime}</p>
-            <p>Time Out: {record.endTime}</p>
-            <p>Time at Work: {record.elapsedTime} minutes</p>
+            <p> Time Out: {record.endTime}</p>
+            <p>{" "}</p>
             <p>Total Time: {record.totalTime} hours</p>
-            <p>Pay for this Week: ${record.payForThisWeek}</p>
+             <p>Pay for this Period: ${record.payForThisWeek}</p>
+             <p>-----------------------------------------------</p>
           </li>
         ))}
         <button onClick={clearLocalStorage}>Delete Time Card</button>

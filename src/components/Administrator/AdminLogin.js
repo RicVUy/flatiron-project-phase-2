@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { admin } from '../../data';
+;
 
 function AdminLogin( { isLoggedIn, setLoggedIn })  {
  
@@ -62,8 +63,7 @@ function AdminLogin( { isLoggedIn, setLoggedIn })  {
         </div>
         <button type="submit">Login</button>
       </form>
-           
-      
+          
       </div>
     );
   };

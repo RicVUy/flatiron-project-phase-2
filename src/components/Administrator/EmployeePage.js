@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import EmployeeList from './EmployeeList'
 import NewEmployeeForm from './NewEmployeeForm'
 import SearchEmployee from './SearchEmployee'
-//import EmployeeEdit from './EmployeeEdit'
 
 const EmployeePage = () => {
     const [employees, setEmployees] = useState([])
