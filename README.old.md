@@ -38,7 +38,7 @@ I. Employee
   
   To log in as an employee, use the following:   
                         
-                        name-  Ricardo      password-  kamikaze
+                        name-  Ric      password-  kam123
            or           name-  Edna         password-  Eloise
            or any of the name and password shown in the db.json
                    or in data.js

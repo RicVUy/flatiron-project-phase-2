@@ -2,9 +2,9 @@
   "employees": [
     {
       "id": 1,
-      "name": "Ricardo",
+      "name": "Ric",
       "image": "https://envato-shoebox-0.imgix.net/5855/b8ee-d113-4cb6-9557-59f0adbd4c8e/5fb7a0f537013b6df001b1a3_withmeta.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=eecb09aec187a8ac512ad737b0b815bf",
-      "password": "kamikaze",
+      "password": "kam123",
       "position": "Owner",
       "schedule": "Thursday, Friday, Saturday, Sunday",
       "workTime": 123,
@@ -41,9 +41,9 @@
       "userName": "jonboy"
     },
     {
-      "name": "JayR Cabanban",
+      "name": "Jay",
       "image": "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_1280.png",
-      "password": "mabuhay",
+      "password": "mab",
       "position": "Purchaser",
       "schedule": "Monday to Saturday",
       "workTime": 0,

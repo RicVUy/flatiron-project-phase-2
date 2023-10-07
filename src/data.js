@@ -1,8 +1,8 @@
 const employees1 = [
     { 
         id : 1,
-        name1 : "Ricardo",
-        password1: "kamikaze",
+        name1 : "Ric",
+        password1: "kam123",
         payPerHour:20,
     },
   {
@@ -20,8 +20,8 @@ const employees1 = [
   },
   { 
     id : 4,
-    name1 : "JayR Cabanban",
-    password1: "mabuhay",
+    name1 : "Jay",
+    password1: "mab",
     payPerHour:20,
     
 },
@@ -57,7 +57,12 @@ const admin =[
     {
         id : 2,
         name :"Vivien",
-        password: "Gertrude"
+        password: "Gertrude",
+    },
+    {
+        id : 3,
+        name :"Mer",
+        password: "Em1234"
     }
 ]
 export { employees1, admin}
