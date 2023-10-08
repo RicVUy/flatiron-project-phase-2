@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { admin } from '../../data';
-;
+
 
 function AdminLogin( { isLoggedIn, setLoggedIn })  {
  
