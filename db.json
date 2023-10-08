@@ -74,8 +74,8 @@
       "schedule": "Monday to Saturday",
       "workTime": 450,
       "payPerHour": 20,
-      "timeInEvents": [],
-      "timeOutEvents": [],
+      "timeInEvents": "9:30-PM",
+      "timeOutEvents": "5:30 AM",
       "payForThisWeek": "0",
       "id": 6
     },
