@@ -9,8 +9,8 @@
       "schedule": "Thursday, Friday, Saturday, Sunday",
       "workTime": 123,
       "payPerHour": 20,
-      "timeInEvents": [],
-      "timeOutEvents": [],
+      "timeInEvents": "8:00 AM",
+      "timeOutEvents": "5:00 PM",
       "payForThisWeek": "130"
     },
     {
@@ -61,8 +61,8 @@
       "schedule": "Monday to Wednesday",
       "workTime": 0,
       "payPerHour": 20,
-      "timeInEvents": [],
-      "timeOutEvents": [],
+      "timeInEvents": "7:00 AM",
+      "timeOutEvents": "6:00 PM",
       "payForThisWeek": "450",
       "id": 5
     },
