@@ -41,7 +41,7 @@
       "userName": "jonboy"
     },
     {
-      "name": "Jay",
+      "name": "Jay Cabanban",
       "image": "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_1280.png",
       "password": "mab",
       "position": "Purchaser / Cashier",
@@ -50,7 +50,7 @@
       "payPerHour": "34",
       "timeInEvents": [],
       "timeOutEvents": [],
-      "payForThisWeek": "1000",
+      "payForThisWeek": "10",
       "id": 4
     },
     {
